@@ -108,16 +108,14 @@ pkg server.js --targets node18-win-x64 --output taekwondo-app
 
 ```
 ├── src/
-│   ├── index.html           # Main HTML — tabbed interface
-│   ├── pp_script.js         # Frontend JavaScript — all UI logic
-│   ├── pp.css               # Stylesheet
-│   ├── server.js            # Node.js/Express backend server
-│   ├── equipments.csv       # Equipment inventory data
-│   ├── students.csv         # Student roster and payment data
-│   ├── taekwondo-app.exe    # Packaged Windows executable
-│   └── *.png                # Equipment images (e.g. armor-red.png)
-├── docs/
-│   └── TaekwondoManager_Documentation.docx
+├── index.html           # Main HTML — tabbed interface
+├── pp_script.js         # Frontend JavaScript — all UI logic
+├── pp.css               # Stylesheet
+├── server.js            # Node.js/Express backend server
+├── equipments.csv       # Equipment inventory data
+├── students.csv         # Student roster and payment data
+├── taekwondo-app.exe    # Packaged Windows executable
+├── *.png                # Equipment images (e.g. armor-red.png)
 └── README.md
 ```
 
