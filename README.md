@@ -1,11 +1,11 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23416374)
-# LBYCPG3 Term End Project — (Write Your Project Title Here)
+# LBYCPG3 Term End Project — Taekwondo Manager
 
-**Group Members:** (Edit this line to add your full names)
+**Group Members:** Marcus Alden D. Taraya
 
 ## Abstract
 
-A concise summary of the project, its objectives, and its outcomes.
+This project aims to build an autonomus sorter for taekwondo goods and checker for taekwondo students. It will help by making manual processes automatic by letting a program do the work
 
 ## Introduction
 
