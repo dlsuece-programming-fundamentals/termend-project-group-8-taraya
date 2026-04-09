@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="pp.css">
-<title>Taekwondo Inventory Manager</title>
+    <link rel="stylesheet" href="pp.css">
+    <title>Taekwondo Manager</title>
 </head>
-
 <body>
 
-<h1>Taekwondo Equipment Inventory</h1>
+<h1>Taekwondo Manager</h1>
 
-<!-- ADD EQUIPMENT SECTION -->
-<h2>Add Equipment</h2>
+<!-- TABS -->
+<div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('inventory')">Equipment Inventory</button>
+    <button class="tab-btn" onclick="switchTab('students')">Students</button>
+</div>
 
-<select id="item" onchange="updateDropdowns()">
-<option value="">Select Item</option>
-<option value="armor">Armor</option>
-<option value="headgear">Headgear</option>
-<option value="uniform">Uniform</option>
-<option value="pad">Pad</option>
-<option value="arm guards">Arm Guards</option>
-</select>
+<!-- ══════════════ INVENTORY TAB ══════════════ -->
+<div id="tab-inventory" class="tab-content">
+    <h2>Add Equipment</h2>
+    <select id="item" onchange="updateDropdowns()">
+        <option value="">Select Item</option>
+        <option value="armor">Armor</option>
+        <option value="headgear">Headgear</option>
+        <option value="uniform">Uniform</option>
+        <option value="pad">Pad</option>
+        <option value="arm guards">Arm Guards</option>
+    </select>
+    <select id="size" disabled>
+        <option value="">Select Size</option>
+    </select>
+    <select id="color" disabled>
+        <option value="">Select Color</option>
+    </select>
+    <button onclick="addEquipment()">Add Equipment</button>
+    <button onclick="filterInventory()">Filter</button>
+    <button onclick="loadInventory()">Reset</button>
+    <hr>
+    <div id="stats"></div>
+    <div id="inventory"></div>
+</div>
 
-<select id="size" disabled>
-<option value="">Select Size</option>
-</select>
-
-<select id="color" disabled>
-<option value="">Select Color</option>
-</select>
-
-<button onclick="addEquipment()">Add Equipment</button>
-<button onclick="filterInventory()">Filter</button>
-<button onclick="loadInventory()">Reset</button>
-
-
-<hr>
-
-<!-- INVENTORY SUMMARY -->
-<div id="stats"></div>
-
-<!-- INVENTORY DISPLAY -->
-<div id="inventory"></div>
+<!-- ══════════════ STUDENTS TAB ══════════════ -->
+<div id="tab-students" class="tab-content" style="display:none;">
+    <h2>Add Student</h2>
+    <input type="text"   id="s-name"    placeholder="Name">
+    <input type="number" id="s-age"     placeholder="Age" min="1">
+    <label>Date Started Paying:
+        <input type="date" id="s-start">
+    </label>
+    <label>Next Payment Date:
+        <input type="date" id="s-next">
+    </label>
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="loadStudents()">Reset</button>
+    <hr>
+    <div id="student-stats"></div>
+    <div id="student-list"></div>
+</div>
 
 <script src="pp_script.js"></script>
-
 </body>
 </html>
