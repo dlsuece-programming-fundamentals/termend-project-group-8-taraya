@@ -1,0 +1,55 @@
+armor,2xl,red
+armor,2xl,blue
+armor,xl,red
+armor,xl,blue
+armor,l,red
+armor,l,blue
+armor,m,red
+armor,m,blue
+armor,s,red
+armor,s,blue
+armor,xs,red
+armor,xs,blue
+armor,2xl,red
+armor,2xl,blue
+headgear,xl,red
+headgear,xl,blue
+headgear,l,red
+headgear,l,blue
+headgear,m,red
+headgear,m,blue
+headgear,s,red
+headgear,s,blue
+headgear,xs,red
+headgear,xs,blue
+arm guards, ,red
+arm guards, ,blue
+arm guards, ,black
+uniform,100,top
+uniform,100,bottom
+uniform,110,top
+uniform,110,bottom
+uniform,120,top
+uniform,120,bottom
+uniform,130,top
+uniform,130,bottom
+uniform,140,top
+uniform,140,bottom
+uniform,150,top
+uniform,150,bottom
+uniform,160,top
+uniform,160,bottom
+uniform,170,top
+uniform,170,bottom
+uniform,180,top
+uniform,180,bottom
+uniform,190,top
+uniform,190,bottom
+uniform,200,top
+uniform,200,bottom
+uniform,210,top
+uniform,210,bottom
+pad, ,black
+pad, ,blue
+pad, ,red
+

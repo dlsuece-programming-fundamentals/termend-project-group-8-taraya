@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="pp.css">
+<title>Taekwondo Inventory Manager</title>
+</head>
+
+<body>
+
+<h1>Taekwondo Equipment Inventory</h1>
+
+<!-- ADD EQUIPMENT SECTION -->
+<h2>Add Equipment</h2>
+
+<select id="item" onchange="updateDropdowns()">
+<option value="">Select Item</option>
+<option value="armor">Armor</option>
+<option value="headgear">Headgear</option>
+<option value="uniform">Uniform</option>
+<option value="pad">Pad</option>
+<option value="arm guards">Arm Guards</option>
+</select>
+
+<select id="size" disabled>
+<option value="">Select Size</option>
+</select>
+
+<select id="color" disabled>
+<option value="">Select Color</option>
+</select>
+
+<button onclick="addEquipment()">Add Equipment</button>
+<button onclick="filterInventory()">Filter</button>
+<button onclick="loadInventory()">Reset</button>
+
+
+<hr>
+
+<!-- INVENTORY SUMMARY -->
+<div id="stats"></div>
+
+<!-- INVENTORY DISPLAY -->
+<div id="inventory"></div>
+
+<script src="pp_script.js"></script>
+
+</body>
+</html>
